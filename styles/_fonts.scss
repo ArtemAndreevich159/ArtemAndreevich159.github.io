@@ -1,0 +1,33 @@
+@mixin include-font ($name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $name;
+    src: url($path + '.eot');
+    src: url($path + '.eot?#iefix') format('embedded-opentype'),
+    url($path + '.woff') format('woff'),
+    url($path + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include include-font('DIN Pro', '../fonts/DINPro-Light',         300,      normal);
+@include include-font('DIN Pro', '../fonts/DINPro-LightItalic',   300,      italic);
+@include include-font('DIN Pro', '../fonts/DINPro-Medium',        500,      normal);
+@include include-font('DIN Pro', '../fonts/DINPro-MediumItalic',  500,      italic);
+@include include-font('DIN Pro', '../fonts/DINPro-Black',         900,      normal);
+@include include-font('DIN Pro', '../fonts/DINPro-BlackItalic',   900,      italic);
+@include include-font('DIN Pro', '../fonts/DINPro-Bold',          bold,     normal);
+@include include-font('DIN Pro', '../fonts/DINPro-BoldItalic',    bold,     italic);
+@include include-font('DIN Pro', '../fonts/DINPro',               normal,   normal);
+@include include-font('DIN Pro', '../fonts/DINPro-Italic',        normal,   italic);
+
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedLight',         300,    normal);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedLightItalic',   300,    italic);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedMedium',        500,    normal);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedMediumItalic',  500,    italic);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedBlack',         900,    normal);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedBlackItalic',   900,    italic);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedBold',          bold,   normal);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedBoldItalic',    bold,   italic);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedRegular',       normal, normal);
+@include include-font('DIN Pro Cond', '../fonts/DINPro-CondensedItalic',        normal, italic);
