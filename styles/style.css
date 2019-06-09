@@ -201,7 +201,8 @@ body {
   justify-content: center; }
   .block--right__title, .block--right__description, .block--right__footer, .block--right__action {
     width: 100%;
-    max-width: 34.72222vw; }
+    max-width: 34.72222vw;
+    overflow: hidden; }
   .block--right__title {
     font: 6.30252vh/7.14286vh "DIN Pro";
     font-weight: 900;
@@ -400,6 +401,9 @@ body {
   background: #2C323C;
   color: #FFFFFF; }
 
+.animated {
+  animation-duration: 500ms; }
+
 .slideInUpLeft {
   -webkit-animation-name: slideInUpLeft;
   animation-name: slideInUpLeft; }
@@ -418,35 +422,27 @@ body {
 
 @keyframes slideInUpLeft {
   0% {
-    opacity: 0;
-    transform: translate(-25%, 50%); }
+    transform: translate(15%, 50%); }
   100% {
-    opacity: 1;
     transform: translate(0, 0); } }
 
 @keyframes slideOutUpLeft {
   0% {
-    opacity: 1;
     transform: translate(0, 0); }
   100% {
-    opacity: 0;
     transform: translate(-25%, -50%); } }
 
 @keyframes slideInDownLeft {
   0% {
-    opacity: 0;
     transform: translate(-25%, -50%); }
   100% {
-    opacity: 1;
     transform: translate(0, 0); } }
 
 @keyframes slideOutDownLeft {
   0% {
-    opacity: 1;
     transform: translate(0, 0); }
   100% {
-    opacity: 0;
-    transform: translate(-25%, 50%); } }
+    transform: translate(15%, 50%); } }
 
 .block--head {
   width: 100%;
